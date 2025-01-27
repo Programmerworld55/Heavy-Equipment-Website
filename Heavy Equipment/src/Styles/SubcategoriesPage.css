@@ -1,0 +1,30 @@
+.subcategories-page-container {
+  background-color: #343a40; /* Dark background */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.subcategory-card {
+  background-color: #212529; /* Dark card background */
+  color: white;
+}
+
+.subcategory-card .card-title {
+  color: #ffc107; /* Highlight title */
+}
+
+.subcategory-card .card-text {
+  color: #adb5bd; /* Muted text color */
+}
+
+.subcategory-card .btn-custom {
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+  color: white;
+}
+
+.subcategory-card .btn-custom:hover {
+  background-color: #ffc107;
+  color: #fff;
+}

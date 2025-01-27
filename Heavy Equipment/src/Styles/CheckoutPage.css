@@ -1,0 +1,46 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+.card-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.list-group-item {
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-block:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+

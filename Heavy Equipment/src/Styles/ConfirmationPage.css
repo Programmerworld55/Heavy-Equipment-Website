@@ -1,0 +1,51 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.text-success {
+  font-weight: bold;
+}
+
+.text-info {
+  font-weight: bold;
+  color: #17a2b8;
+}
+
+.swal-popup {
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.swal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.swal-html {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.swal-confirm-button {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.swal-confirm-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}

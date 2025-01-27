@@ -1,0 +1,139 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(52, 58, 64, 0.9), rgba(52, 58, 64, 0.7)); /* Adjusted background color with transparency */
+  padding: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  list-style-type: none; /* Remove list type dots */
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: #ffc107;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav .nav-item {
+  margin-bottom: 10px;
+  list-style: none;
+  color: white;
+}
+
+.sidebar-nav .nav-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar-nav .nav-link:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.btn-signup {
+  background-color: #ffc107;
+  color: #202020;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  transition: color 0.3s ease, padding 0.3s ease; /* Only change text color and padding on hover */
+  width: auto;
+  height: auto;
+}
+
+.btn-signup:hover {
+  background-color: #ffc107;
+  color: white;
+  padding: 12px; /* Add a little padding on hover */
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #ffc107; /* Highlight active link */
+}
+
+.btn {
+  transition: color 0.3s ease, padding 0.3s ease; /* Only change text color and padding on hover */
+}
+
+.btn:hover { /* Add background color change */
+  color: white;
+  padding: 12px; /* Add a little padding on hover */
+  border: 1px solid #ffc107; /* Optional: Add a border for more emphasis */
+  transition: color 0.3s ease, padding 0.3s ease; /* Smooth transition */
+}
+
+.search-button {
+  background-color: #ffc107;
+  color: #202020;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: color 0.3s ease, padding 0.3s ease; /* Only change text color and padding on hover */
+}
+
+.search-button:hover {
+  color: white;
+  padding: 12px 22px; /* Add a little padding on hover */
+}
+
+.search-input {
+  width: 100%;
+  max-width: 800px; /* Adjust max-width */
+  min-width: 0; /* Prevent flexbox shrinking issues */
+  background-color: transparent; /* Remove background color */
+}
+
+.logo {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffc107;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+
+.toggleButton {
+  border: none;
+}
+
+.toggleIcon {
+  color: #ffc107;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .search-button {
+    width: auto;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .search-input {
+    width: 100%; /* Full width for small screens */
+  }
+}
+
+
+

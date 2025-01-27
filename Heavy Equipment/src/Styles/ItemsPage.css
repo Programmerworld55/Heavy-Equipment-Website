@@ -1,0 +1,236 @@
+.items-page-container {
+  position: relative;
+  min-height: 100vh; /* Ensure it covers the whole window */
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/image22.jpg'); 
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure it stays above the background image */
+  color: #fff; /* Text color */
+  padding: 20px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.description-text {
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: height 0.3s ease-in-out;
+}
+
+.category-card:hover .description-text {
+  height: auto;
+  max-height: 120px; /* Limit the maximum height */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-custom {
+  background-color: #ffc107;
+  color: #202020;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #202020;
+  color: #ffc107;
+}
+
+.btn-outline-warning {
+  color: #ffc107;
+  border-color: #ffc107;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #202020;
+}
+
+.btn-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffc107;
+  color: #202020;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-floating:hover {
+  background-color: #e0a800;
+  color: #ffffff;
+}
+
+.btn-floating .arrow {
+  font-size: 1.5rem;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.btn-floating .back-text {
+  display: none;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.btn-floating:hover .back-text {
+  display: block;
+  font-size: 1.5rem;
+  color: yellow;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
+
+.arrow-clicked {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+@keyframes moveButton {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: yellow; /* Change close icon color to yellow */
+}
+
+.hover-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  z-index: 10; /* Ensure the popup stays above other elements */
+}
+
+.hover-popup img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .btn-floating {
+    top: 10px;
+    right: 10px;
+  }
+
+  .modal-content {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+.category-card {
+  background-color: #495057; /* Card background color */
+  color: #fff; /* Card text color */
+}
+
+.category-card .card-title {
+  color: #ffc107; /* Title color */
+}
+
+.category-card .card-text {
+  color: #adb5bd; /* Description text color */
+}

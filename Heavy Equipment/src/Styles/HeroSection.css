@@ -1,0 +1,124 @@
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #202020; /* Ensure background color is set */
+}
+
+.hero-section .image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  height: 300px; /* Ensure consistent height */
+}
+
+.hero-section .hero-image {
+  height: 100%; /* Ensure consistent height */
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  z-index: 0; /* Ensure image is below gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+  position: relative; /* Ensure shadow is applied */
+}
+
+.hero-section .hero-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  filter: brightness(0.9); /* Darken slightly on hover */
+}
+
+@keyframes subtleZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-section .hero-image {
+  animation: subtleZoom 8s infinite;
+}
+
+.hero-section .text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: yellow; /* Change text color to yellow */
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-section .text-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-section .text-content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.hero-section .cta-button {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #ffc107; /* Change button color to yellow */
+  color: #202020;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.hero-section .cta-button:hover {
+  background-color: #ff5733;
+}
+
+.hero-section {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hero-section .image-container {
+  opacity: 0;
+  animation: fadeInOverlay 2s forwards;
+}
+
+@keyframes fadeInOverlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section .text-section {
+    order: 2; /* Move text section below image */
+  }
+
+  .hero-section .discover-button {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .hero-section .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section .text-content p {
+    font-size: 1rem;
+  }
+
+  .hero-section .cta-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
