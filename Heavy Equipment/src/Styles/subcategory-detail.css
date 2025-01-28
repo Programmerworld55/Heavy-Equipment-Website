@@ -1,0 +1,76 @@
+.subcategory-detail-page-container {
+  padding: 20px;
+  background-color: #343a40; /* Set background color to dark */
+  color: #fff; /* Set text color to white */
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-gallery img {
+  width: calc(50% - 10px); /* Set width to 50% minus gap */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.full-width-image {
+  width: 100%; /* Set width to 100% if there is only one image */
+}
+
+.card {
+  background-color: #212529; /* Set card background color to dark */
+  border: none; /* Remove card border */
+  border-radius: 8px; /* Set card border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Set card shadow */
+}
+
+.list-group-item {
+  background-color: #212529; /* Set list group item background color to dark */
+  border: none; /* Remove list group item border */
+}
+
+.subcategory-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+h2.text-warning {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p.subcategory-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #ffc107; /* Set description text color */
+  background-color: #212529; /* Set description background color */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.list-group-item strong {
+  font-weight: bold;
+}
+
+.detail-value {
+  font-weight: normal;
+  color: #ffc107;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.detail-item {
+  background-color: #343a40;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

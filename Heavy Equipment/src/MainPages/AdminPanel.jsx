@@ -1,7 +1,7 @@
 // pages/Home.js
 import React from "react";
-import Navbar from "../Components/Reuseable components/Navbar";
-import Dashboard from "../Components/AdminComponents/Dashboard";
+import Navbar from "../MainPages/Components/Navbar";
+import Dashboard from "../Admin/AdminComponents/Dashboard";
 
 
 const Home = () => {

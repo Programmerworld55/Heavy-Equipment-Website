@@ -1,10 +1,10 @@
 // pages/Home.js
 import React from "react";
-import Navbar from "../Components/Reuseable components/Navbar";
-import HeroSection from "../Components/Reuseable components/Herosection";
-import Footer from "../Components/Reuseable components/Footer";
-import ItemsPage from "./ItemsPage";
-import WhatsAppButton from "../Components/Reuseable components/WhatsAppButton";
+import Navbar from "./Components/Navbar";
+import HeroSection from "./Components/Herosection";
+import Footer from "./Components/Footer";
+import ItemsPage from "../MainPages/../HomeComponents/ItemsPage";
+import WhatsAppButton from "./Components/WhatsAppButton";
 
 const Home = () => {
   return (
